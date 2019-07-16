@@ -76,7 +76,7 @@ Google: The public directory contains some of the common files for web applicati
 
 ### 6. Write a rails route for a controller called "main" and a page called "game" that takes in a parameter called "guess"
 
-  get '/game/:guess' => 'main#'
+  get '/game/:guess' => 'main#guess'
 
 ### 7. What are cookies for? How do they work? What is the difference between a session and a cookie?
 
@@ -94,10 +94,17 @@ The method attribute defines how data is sent. The HTTP protocol provides severa
 
 ### 9. Why would you use an instance variable in a rails controller?
 
+Google: An instance variable has a name beginning with @, and its scope is confined to whatever object self refers to. Two different objects, even if they belong to the same class, are allowed to have different values for their instance variables. From outside the object, instance variables cannot be altered or even observed (i.e., ruby's instance variables are never public) except by whatever methods are explicitly provided by the programmer. As with globals, instance variables have the nil value until they are initialized.
+
 ### 10. Name two rails generator commands and what files they create:
+
+rails generate model 
+rails generate controller 
 
 ### 11. Rails has a great community and lots of free tutorials to help you learn. Here is a list of some tutorials to choose from, choose one, do it, and then report back here at least one thing you learned. You can also use a different resource if you find one that you like better. 
 
 - https://www.tutorialspoint.com/ruby-on-rails/index.htm
 - http://railsforzombies.org
 - http://guides.rubyonrails.org/getting_started.html
+
+I chose rubyonrails.org, and something I thought was really interesting was how you can use the link_to method to create links. 
